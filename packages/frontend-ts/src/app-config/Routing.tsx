@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
+// @ts-ignore
 import Home from '_Pages/home';
 
 const IndexRoutes: FC = () => (

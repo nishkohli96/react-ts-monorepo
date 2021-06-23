@@ -28,6 +28,7 @@ module.exports = {
         'react/react-in-jsx-scope': 'off',
         // allow jsx syntax in js or ts files 
         'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
-	},
+        '@typescript-eslint/ban-ts-comment': 'off',
+    },
 	"ignorePatterns": ["reportWebVitals.ts"],
 };
