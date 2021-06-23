@@ -1,6 +1,7 @@
 const { alias } = require('react-app-rewire-alias');
 
 const aliasMap = {
+    _AppConfig: 'src/app-config',
     _Images: 'src/assets/images',
     _Pages: 'src/pages',
     _Shared: 'src/shared',
