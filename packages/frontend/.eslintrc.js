@@ -3,13 +3,7 @@ module.exports = {
         browser: true,
         es2021: true,
     },
-    extends: [
-        'eslint:recommended',
-        'plugin:react/recommended',
-        'plugin:@typescript-eslint/recommended',
-        'plugin:prettier/recommended',
-    ],
-    parser: '@typescript-eslint/parser',
+    extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:prettier/recommended'],
     parserOptions: {
         ecmaFeatures: {
             jsx: true,
@@ -17,7 +11,7 @@ module.exports = {
         ecmaVersion: 12,
         sourceType: 'module',
     },
-    plugins: ['react', '@typescript-eslint'],
+    plugins: ['react'],
     settings: {
         react: {
             version: 'detect',
@@ -27,8 +21,7 @@ module.exports = {
         // suppress errors for missing 'import React' in files
         'react/react-in-jsx-scope': 'off',
         // allow jsx syntax in js or ts files
-        'react/jsx-filename-extension': [1, { extensions: ['.ts', '.tsx'] }],
-        '@typescript-eslint/ban-ts-comment': 'off',
+        'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     },
-    ignorePatterns: ['reportWebVitals.ts'],
+    ignorePatterns: ['reportWebVitals.ts', 'App.test.js'],
 };

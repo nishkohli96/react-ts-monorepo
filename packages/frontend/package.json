@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
-    "lint": "eslint '*/**/*.{js,ts,tsx}' --fix",
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --fix && prettier --write",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test"
   },
@@ -23,6 +23,16 @@
     "extends": [
       "react-app",
       "react-app/jest"
+    ]
+  },
+  "husky": {
+    "hooks": {
+        "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js, jsx}": [
+        "eslint --fix"
     ]
   },
   "browserslist": {
@@ -41,6 +51,7 @@
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^6.0.0",
     "prettier": "^2.3.1",
     "react-app-rewire-alias": "^1.0.3",
     "react-app-rewired": "^2.1.8"
