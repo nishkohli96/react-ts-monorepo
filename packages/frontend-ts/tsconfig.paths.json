@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "_AppConfig": ["src/app-config"],
+            "_Images": ["src/assets/images"],
+            "_Pages": ["src/pages"],
+            "_Shared": ["src/shared"],
+            "_Styles": ["src/assets/styles"],
+            "_Utils": ["src/utils"]
+        }
+    }
+}
