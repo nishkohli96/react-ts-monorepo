@@ -11,3 +11,7 @@
 -  Alias imports using `react-app-rewired` & `react-app-rewire-alias`
 -  imported `@material-ui` & setup routing.
 -  Github-Actions to make sure a build is successfully generated on pushing the code to your repository.
+
+### NestJs Backend
+
+- Preconfigured Fastify code with NestJs. Can retain the Fastify code & remove express or vice-versa
