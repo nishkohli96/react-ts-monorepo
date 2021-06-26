@@ -5,11 +5,13 @@
     "private": true,
     "workspaces": ["packages/*"],
     "scripts": {
-        "frontend": "cd packages/frontend && yarn start",
-        "build-frontend": "cd packages/frontend && yarn build",
-        "test-frontend": "cd packages/frontend && yarn test",
-        "frontend-ts": "cd packages/frontend-ts && yarn start",
-        "build-frontend-ts": "cd packages/frontend-ts && yarn build",
-        "test-frontend-ts": "cd packages/frontend-ts && yarn test"
+        "frontend": "yarn workspace frontend start",
+        "frontend:test": "yarn workspace frontend test",
+        "frontend:build": "yarn workspace frontend build",
+        "frontend-ts": "yarn workspace frontend-ts start",
+        "frontend-ts:test": "yarn workspace frontend-ts test",
+        "frontend-ts:build": "yarn workspace frontend-ts build",
+        "backend": "yarn workspace backend start",
+        "backend:build": "yarn workspace backend build"
     }
 }

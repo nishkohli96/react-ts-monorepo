@@ -23,4 +23,7 @@ jobs:
               run: yarn install
 
             - name: Build react-app
-              run: yarn build-frontend
+              run: yarn frontend:build
+
+            - name: Build backend
+              run: yarn backend:build
