@@ -6,11 +6,12 @@
     "workspaces": ["packages/*"],
     "scripts": {
         "frontend": "yarn workspace frontend start",
-        "build-frontend": "yarn workspace frontend build",
-        "test-frontend": "yarn workspace frontend test",
+        "frontend:test": "yarn workspace frontend test",
+        "frontend:build": "yarn workspace frontend build",
         "frontend-ts": "yarn workspace frontend-ts start",
-        "build-frontend-ts": "yarn workspace frontend-ts build",
-        "test-frontend-ts": "yarn workspace frontend-ts test",
-        "backend": "yarn workspace backend start"
+        "frontend-ts:test": "yarn workspace frontend-ts test",
+        "frontend-ts:build": "yarn workspace frontend-ts build",
+        "backend": "yarn workspace backend start",
+        "backend:build": "yarn workspace backend build"
     }
 }

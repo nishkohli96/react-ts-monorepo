@@ -10,7 +10,7 @@ exports.HomeService = void 0;
 const common_1 = require("@nestjs/common");
 let HomeService = class HomeService {
     getHello() {
-        return 'Hello World peiple!';
+        return 'Hello World!';
     }
 };
 HomeService = __decorate([

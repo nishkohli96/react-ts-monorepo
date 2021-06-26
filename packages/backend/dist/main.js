@@ -7,6 +7,7 @@ const app_module_1 = require("./app.module");
 async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule, new platform_fastify_1.FastifyAdapter({
         logger: {
+            level: 'info',
             prettyPrint: true,
         },
         ignoreTrailingSlash: true,
