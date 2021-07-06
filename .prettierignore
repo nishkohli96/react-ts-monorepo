@@ -1,0 +1,14 @@
+node_modules
+
+package.json
+.eslintrc.js
+.prettierignore
+.prettierrc
+
+.gitignore
+.env
+.DS_Store
+
+images/*
+icons/*
+fonts/*

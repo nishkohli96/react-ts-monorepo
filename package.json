@@ -3,7 +3,9 @@
     "author": "Nishant Kohli",
     "version": "1.0.0",
     "private": true,
-    "workspaces": ["packages/*"],
+    "workspaces": [
+        "packages/*"
+    ],
     "scripts": {
         "frontend": "yarn workspace frontend start",
         "frontend:test": "yarn workspace frontend test",
@@ -13,5 +15,19 @@
         "frontend-ts:build": "yarn workspace frontend-ts build",
         "backend": "yarn workspace backend start",
         "backend:build": "yarn workspace backend build"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js, jsx, ts, tsx}": [
+            "prettier --fix"
+        ]
+    },
+    "devDependencies": {
+        "husky": "^6.0.0",
+        "prettier": "^2.3.1"
     }
 }
