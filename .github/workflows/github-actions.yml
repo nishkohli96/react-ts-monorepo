@@ -1,29 +1,29 @@
-name: github-actions
+# name: github-actions
 
-on: [push]
+# on: [push]
 
-jobs:
-    build:
-        runs-on: ubuntu-latest  
+# jobs:
+#     build:
+#         runs-on: ubuntu-latest  
 
-        strategy:
-            matrix:
-                node-version: [14.x]
+#         strategy:
+#             matrix:
+#                 node-version: [14.x]
 
-        steps:
-            - name: Git Checkout
-              uses: actions/checkout@v2
+#         steps:
+#             - name: Git Checkout
+#               uses: actions/checkout@v2
 
-            - name: Setup Node env
-              uses: actions/setup-node@v2.1.4
-              with:
-                  node-version: ${{ matrix.node-version }}
+#             - name: Setup Node env
+#               uses: actions/setup-node@v2.1.4
+#               with:
+#                   node-version: ${{ matrix.node-version }}
 
-            - name: Install dependencies
-              run: yarn install
+#             - name: Install dependencies
+#               run: yarn install
 
-            - name: Build react-app
-              run: yarn frontend:build
+#             - name: Build react-app
+#               run: yarn frontend:build
 
-            - name: Build backend
-              run: yarn backend:build
+#             - name: Build backend
+#               run: yarn backend:build
